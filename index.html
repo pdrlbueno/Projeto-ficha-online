@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,15 +7,168 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-
+        <h1>Crie seu personagem de D&D</h1>
     </header>
+    <form action="">
+        <main>
+            <div class="flex">
+                <div class="box">
 
-    <body>
-        
-    </body>
+                    <label for="Jname">Nome do jogador:</label>
+                    <input type="text" id="Jname" name="Jname"><br>
+                    <label for="Pname">Nome do personagem:</label>
+                    <input type="text" id="Pname" name="Pname"><br>
+                    <label for="birthday">Data de nascimento do personagem:</label>
+                    <input type="date" id="birthday" name="birthday"><br>
+                    <label for="altura">Altura do personagem:</label>
+                    <input type="number" id="altura" name="altura"><br>
+                    <label for="level">Nível do personagem:</label>
+                    <input type="number" id="level" name="level" min="1" max="20"><br>
+
+
+
+
+                    <label for="peso">Peso do personagem:</label>
+                    <input type="number" id="peso" name="peso">
+                    <br>
+                    <label for="Cabcolor">Selecione a cor do cabelo de seu personagem:</label>
+                    <input type="color" id="Cabcolor" name="Cabcolor">
+                    <label for="Olhoscolor">Selecione a cor dos olhos de seu personagem:</label>
+                    <input type="color" id="Olhoscolor" name="Olhoscolor">
+                    <label for="Olhoscolor">Selecione a cor da pele de seu personagem:</label>
+                    <input type="color" id="Olhoscolor" name="Olhoscolor">
+
+
+                </div>
+                <div class="box">
+
+                    <p>Selecione sua raça:</p>
+                    <select name="raça" id="raça">
+                        <option value="nulo">....</option>
+                        <option value="Anão">Anão</option>
+                        <option value="Elfo">Elfo</option>
+                        <option value="Halfling">Halfling</option>
+                        <option value="Humano">Humano</option>
+                        <option value="Draconato">Draconato</option>
+                        <option value="Gnomo">Gnomo</option>
+                        <option value="meioElfo">Meio-Elfo</option>
+                        <option value="meioOrc">Meio-Orc</option>
+                        <option value="tielfling">Tielfling</option>
+                    </select><br>
+
+                    <label for="Ante">Antecedente do personagem:</label><br>
+                    <input type="text" id="Ante" name="Ante">
+                    <br>
+
+                    <p>Selecione seu Alinhamento:</p>
+                    <select name="raça" id="alinhamento">
+                        <option value="nulo">....</option>
+                        <option value="LB">Leal e Bom</option>
+                        <option value="NB">Neutro e Bom</option>
+                        <option value="CB">Caótico e Bom</option>
+                        <option value="LN">Leal e Neutro</option>
+                        <option value="N">Neutro</option>
+                        <option value="CN">Caótico e Neutro</option>
+                        <option value="LM">Leal e Mau</option>
+                        <option value="NM">Neutro e Mau</option>
+                        <option value="CM">Caótico e Mal</option>
+                    </select><br>
+
+                </div>
+
+            </div>
+
+
+            <div class="flex">
+
+                <div class="box">
+                    <p>Perícias com proficiência</p>
+
+                    <label><input type="checkbox" name="salvaguarda" value="Persuasão"> Persuasão</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Prestidigitação">
+                        Prestidigitação</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Religião"> Religião</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Sobrevivência"> Sobrevivência</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Percepção"> Percepção</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Intuição"> Intuição</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Investigação"> Investigação</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Lidar com Animais"> Lidar com
+                        Animais</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Medicina"> Medicina</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Natureza"> Natureza</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Intimidação"> Intimidação</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="História"> História</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Furtividade"> Furtividade</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Enganação"> Enganação</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Acrobacia"> Acrobacia</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Arcanismo"> Arcanismo</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Atletismo"> Atletismo</label><br>
+                    <label><input type="checkbox" name="salvaguarda" value="Atuação"> Atuação</label><br>
+
+                </div>
+                <div class="box">
+                    <p>Selecione uma classe:</p>
+
+                    <input type="radio" id="Bárbaro" name="classe" value="Bárbaro">
+                    <label for="Bárbaro">Bárbaro</label><br>
+                    <input type="radio" id="Bardo" name="classe" value="Bardo">
+                    <label for="Bardo">Bardo</label><br>
+                    <input type="radio" id="Bruxo" name="classe" value="Bruxo">
+                    <label for="Bruxo">Bruxo</label><br>
+                    <input type="radio" id="Clérigo" name="classe" value="Clérigo">
+                    <label for="Clérigo">Clérigo</label><br>
+                    <input type="radio" id="Druida" name="classe" value="Druida">
+                    <label for="Druida">Druida</label><br>
+                    <input type="radio" id="Feiticeiro" name="classe" value="Feiticeiro">
+                    <label for="Feiticeiro">Feiticeiro</label><br>
+                    <input type="radio" id="Guerreiro" name="classe" value="Guerreiro">
+                    <label for="Guerreiro">Guerreiro</label><br>
+                    <input type="radio" id="Ladino" name="classe" value="Ladino">
+                    <label for="Ladino">Ladino</label><br>
+                    <input type="radio" id="Mago" name="classe" value="Mago">
+                    <label for="Mago">Mago</label><br>
+                    <input type="radio" id="Paladino" name="classe" value="Paladino">
+                    <label for="Paladino">Paladino</label><br>
+                    <input type="radio" id="Patrulheiro" name="classe" value="Patrulheiro">
+                    <label for="Patrulheiro">Patrulheiro</label><br>
+                </div>
+                <div class="box">
+                    <p>Salvaguardas com proficiência</p>
+
+                    <input type="checkbox" id="Força" name="Força" value="Força">
+                    <label for="Força"> Força</label><br>
+                    <input type="checkbox" id="Destreza" name="Destreza" value="Destreza">
+                    <label for="Destreza"> Destreza</label><br>
+                    <input type="checkbox" id="Constituição" name="Constituição" value="Constituição">
+                    <label for="Constituição"> Constituição</label><br>
+                    <input type="checkbox" id="Inteligencia" name="Inteligencia" value="Inteligencia">
+                    <label for="Inteligencia"> Inteligencia</label><br>
+                    <input type="checkbox" id="Sabedoria" name="Sabedoria" value="Sabedoria">
+                    <label for="Sabedoria"> Sabedoria</label><br>
+                    <input type="checkbox" id="Carisma" name="Carisma" value="Carisma">
+                    <label for="Carisma"> Carisma</label><br>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+    </form>
+
 
     <footer></footer>
 </body>
+
 </html>

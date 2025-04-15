@@ -1,1 +1,39 @@
 
+header{
+background-color: brown;
+text-align: center;
+padding: 10;
+text-decoration: underline;
+text-shadow: 2px 2px gray ;
+}
+
+body{
+   background-color:blanchedalmond;
+   margin: 0;
+  
+}
+main{
+   padding: 50;
+}
+
+.box{
+    background-color: azure;
+    border-style:groove;
+    border-color: black;
+    padding: 3;
+    justify-content: center;
+    margin: 2;
+}
+.flex{
+    display: flex;
+}
+
+#alinhamento{
+    width: 100%;
+}
+#raça{
+    width: 100%;
+}
+#ante{
+    width: 100%;
+}

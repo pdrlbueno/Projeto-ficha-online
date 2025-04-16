@@ -20,7 +20,7 @@ main{
     background-color: azure;
     border-style:groove;
     border-color: black;
-    padding: 3;
+    padding: 5px;
     justify-content: center;
     margin: 2;
 }
@@ -36,4 +36,18 @@ main{
 }
 #ante{
     width: 100%;
+}
+
+.caixa{
+    width: 80px ;
+}
+
+.flex2{
+    text-align: center;
+ display: flex;
+ flex-direction: column;
+}
+.status{
+    height: 100;
+    margin: 5px;
 }

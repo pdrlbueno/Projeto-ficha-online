@@ -22,17 +22,19 @@
                     <label for="Pname">Nome do personagem:</label>
                     <input type="text" id="Pname" name="Pname"><br>
                     <label for="birthday">Data de nascimento do personagem:</label>
-                    <input type="date" id="birthday" name="birthday"><br>
+                    <input type="date" id="birthday" name="birthday" class="caixa"><br>
+                    <label for="idade">Idade do personagem:</label>
+                    <input type="number" id="idade" name="idade" class="caixa"><br>
                     <label for="altura">Altura do personagem:</label>
-                    <input type="number" id="altura" name="altura"><br>
+                    <input type="number" id="altura" name="altura" class="caixa"><br>
                     <label for="level">Nível do personagem:</label>
-                    <input type="number" id="level" name="level" min="1" max="20"><br>
+                    <input type="number" id="level" name="level" min="1" max="20" class="caixa"><br>
 
 
 
 
-                    <label for="peso">Peso do personagem:</label>
-                    <input type="number" id="peso" name="peso">
+                    <label for="peso">Peso do personagem(Kg):</label>
+                    <input type="number" id="peso" name="peso" min="1" class="caixa">
                     <br>
                     <label for="Cabcolor">Selecione a cor do cabelo de seu personagem:</label>
                     <input type="color" id="Cabcolor" name="Cabcolor">
@@ -271,10 +273,67 @@
                         <option value="besta_pesada">Besta Pesada 1d10</option>
                         <option value="zarabatana">Zarabatana 1d4</option>
                     </select>
+                    <p>Escolha sua armadura</p>
 
+                    <select id="armaduras" name="armaduras">
+                        <option value="nulo">....</option>
+                        <option value="acolchoada">Acolchoada (11 + Des)</option>
+                        <option value="couro">Couro (11 + Des)</option>
+                        <option value="couro_batido">Couro Batido (12 + Des)</option>
+                        <option value="gibao_de_peles">Gibão de Peles (12 + Des)</option>
+                        <option value="camisao_de_malha">Camisão de Malha (13 + Des)</option>
+                        <option value="brunea">Brunea (14 + Des)</option>
+                        <option value="peitoral">Peitoral (14 + Des)</option>
+                        <option value="meia_armadura">Meia-Armadura (15 + Des)</option>
+                        <option value="cota_de_aneis">Cota de anéis (14)</option>
+                        <option value="cota_de_malha">Cota de malha (16)</option>
+                        <option value="cota_de_talas">Cota de talas (17)</option>
+                        <option value="placas">Placas (18)</option>
+
+                    </select>
+
+                    <p>Usa escudo?</p>
+                    <input type="checkbox" id="Força" name="Força" value="Força">
+                    <label for="Força"> Sim</label>
+                    <input type="checkbox" id="Destreza" name="Destreza" value="Destreza">
+                    <label for="Destreza"> Não</label><br>
                 </div>
-
-
+                <div class="flex2">
+                    <div class="box">
+                        <div class="flex">
+                            <div class="flex2">
+                                <label for="Jname">Nome do jogador:</label>
+                                <input type="text" id="Jname" name="Jname" class="status">
+                            </div>
+                            <div class="flex2">
+                                <label for="Jname">Nome do jogador:</label>
+                                <input type="text" id="Jname" name="Jname"class="status">
+                            </div>
+                            <div class="flex2">
+                                <label for="Jname">Nome do jogador:</label>
+                                <input type="text" id="Jname" name="Jname"class="status">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="box">
+                        <div class="flex">
+                            <div class="flex2">
+                                <label for="Jname">Nome do jogador:</label>
+                                <input type="text" id="Jname" name="Jname"class="status">
+                            </div>
+                            <div class="flex2">
+                                <label for="Jname">Nome do jogador:</label>
+                                <input type="text" id="Jname" name="Jname"class="status">
+                            </div>
+                            <div class="flex2">
+                                <label for="Jname">Nome do jogador:</label>
+                                <input type="text" id="Jname" name="Jname"class="status">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
 
         </main>

@@ -1,24 +1,35 @@
 header {
-
-    text-align: center;
-    padding: 10;
     text-decoration: underline;
     text-shadow: 2px 2px gray;
+    height: 20%;
+    background-color: brown;
+    font-size: 200%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 body {
-    background-color: blanchedalmond;
-    margin: 0;
+
     background-image: url('imagens/ded capa.avif');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 main {
-    padding: 50;
-    padding-left: 300;
+    
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
@@ -28,55 +39,31 @@ main {
     padding: 5px;
     justify-content: center;
     margin: 2;
+
 }
 
 .flex {
     display: flex;
-}
 
-#alinhamento {
-    width: 100%;
-}
+    padding: 0%;
+    flex-wrap: wrap;
 
-#raça {
-    width: 100%;
-}
-
-#ante {
-    width: 100%;
-}
-
-.caixa {
-    width: 80px;
-}
-
-.flex2 {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .status {
-    height: 100;
+
     margin: 5px;
-    width: 90;
-}
-
-.estender {
-    width: 1080px;
-}
-
-.estender2 {
-    width: 185px;
 
 }
 
-.vida {
-    width: 60;
-    height: 60;
-}
 
 .link {
-    color: black;
+    color: blue;
     font-size: large;
+
 }
+
+.status {
+    width: 60%;
+}
+

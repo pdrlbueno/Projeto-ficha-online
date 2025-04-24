@@ -25,7 +25,7 @@ header {
 
 body  {
 
-    background-image: url('../assets/images/home.png');
+    background-image: url('../assets/images/background_ficha.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -34,15 +34,53 @@ body  {
 
 }
 
-a:link, a:visited {
-    background-color: #f44336;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  a:hover, a:active {
-    background-color: red;
-  }
+
+main {
+    
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.box {
+    background-color: azure;
+    border-style: groove;
+    border-color: black;
+    padding: 5px;
+    justify-content: center;
+    margin: 2;
+    
+}
+
+.flex {
+    display: flex;
+
+    padding: 0%;
+    flex-wrap: wrap;
+
+}
+
+.status {
+
+    margin: 5px;
+
+}
+
+
+.link {
+    color: black;
+    font-size:larger;
+    
+
+}
+
+.status {
+    width: 60%;
+}
+
+.tamanho{
+    width: 22.9%;
+}

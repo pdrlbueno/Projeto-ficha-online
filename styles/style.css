@@ -25,12 +25,10 @@ header {
 
 body  {
 
-    background-image: url('../assets/images/home.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0%;
 
 }
 
@@ -46,3 +44,79 @@ a:link, a:visited {
   a:hover, a:active {
     background-color: red;
   }
+.index{
+    background-image: url('../assets/images/home.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+.ficha{
+    background-image: url('../assets/images/background_ficha.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+.livros{
+    background-image: url('../assets/images/backgorund_livros.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+.magias{
+    background-image: url('../assets/images/backgorund_magias.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+main {
+    padding: 2%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: azure;
+    border-style: groove;
+    border-color: black;
+    padding: 5px;
+    justify-content: center;
+    margin: 2;
+    
+}
+
+.flex {
+    display: flex;
+
+    padding: 0%;
+    flex-wrap: wrap;
+
+}
+
+.status {
+
+    margin: 5px;
+
+}
+
+
+.link {
+    color: black;
+    font-size:larger;
+    
+
+}
+
+.status {
+    width: 60%;
+}
+
+.tamanho{
+    width: 22.9%;
+}

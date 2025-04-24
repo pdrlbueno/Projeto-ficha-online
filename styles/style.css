@@ -25,7 +25,7 @@ header {
 
 body {
 
-    background-image: url('imagens/ded capa.avif');
+    background-image: url('../assets/images/background_ficha.avif');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

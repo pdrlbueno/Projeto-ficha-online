@@ -75,9 +75,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 100%;
+   
+   
 }
-
+main{
+    padding: 2%;
+}
 
 
 .box {
@@ -131,4 +134,30 @@ body {
     text-align: center;
     padding: 2;
     
+}
+.botoes_magias{
+    display: flex;
+    justify-content: space-around;
+}
+.navmagias{
+    color: black;
+    text-decoration: none;
+}
+.texto{
+    width: 22%;
+    margin: 1%;
+    text-align: justify;
+    border-style:dotted;
+    padding: 3px;
+    border-color: blueviolet;
+}
+.box_magias {
+    background-color: azure;
+    border-style: groove;
+    border-color: black;
+    padding: 5px;
+    justify-content: center;
+    margin: 2px;
+    padding: 2px;
+
 }

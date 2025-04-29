@@ -53,8 +53,7 @@ footer {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 100%;
-    padding: 2%;
+    
     flex-direction: column;
     display: flex;
     justify-content: center;

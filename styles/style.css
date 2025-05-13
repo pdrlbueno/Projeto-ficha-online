@@ -1,24 +1,24 @@
 header {
-    height: 18%;
+    height: 16%;
     width: 100%;
     background-color: brown;
     overflow: hidden;
-
+    
+    
 }
 
 .tittle_headder {
     text-decoration: underline;
     text-shadow: 2px 2px gray;
 
-    
-   
+
+
     text-align: center;
 
 }
 
 .sec_header {
-    display: flex;
-    
+    display: inline;
 }
 
 .sec_header button {
@@ -29,16 +29,11 @@ header {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-  }
-  
-  .sec_header button:hover {
-    background-color: rgb(104, 27, 27);
-  }
-  
-  
-  
-  
+}
 
+.sec_header button:hover {
+    background-color: rgb(104, 27, 27);
+}
 
 body {
 
@@ -68,7 +63,7 @@ footer {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    
+
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -109,7 +104,7 @@ main {
     padding: 5px;
     justify-content: center;
     margin: 2;
-    
+
 
 }
 
@@ -120,7 +115,7 @@ main {
     opacity: 0.7;
     width: 500px;
     color: rgb(105, 7, 27);
-    font-size:larger;
+    font-size: larger;
 }
 
 .flex {
@@ -196,10 +191,3 @@ main {
     padding: 2px;
 
 }
-
-
-
-
-  
-  
-  

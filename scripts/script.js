@@ -32,41 +32,20 @@ const classe = document.getElementsByName('classe');
 
 
 
-function AbrirAba(event , Abaname){
-    var i, tabcontent , Abalink;
- // Get all elements with class="tabcontent" and hide them
- tabcontent = document.getElementsByClassName("tabcontent");
- for (i = 0; i < tabcontent.length; i++) {
-   tabcontent[i].style.display = "none";
- }
 
- // Get all elements with class="tablinkSs" and remove the class "active"
- Abalink = document.getElementsByClassName("Abalink");
- for (i = 0; i < Abalink.length; i++) {
-    Abalink[i].className = Abalink[i].className.replace(" active", "");
- }
 
- // Show the current tab, and add an "active" class to the button that opened the tab
- document.getElementById(Abaname).style.display = "block";
- evt.currentTarget.className += " active";
+function TrocarMagias(){
+  window.location.replace("magias.html")
 }
 
+function TrocarFicha(){
+  window.location.replace("ficha.html")
+}
 
+function TrocarLivros(){
+  window.location.replace("livros.html")
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-form.addEventListener("submit",(event) =>{
-    event.preventDefault();
-    alert("deu certo viado")
-} )
-
+function TrocarInicio(){
+  window.location.replace("index.html")
+}

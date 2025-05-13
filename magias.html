@@ -5,34 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+
 
 </head>
 
-<body class="magias">
+<body>
     <header>
         <div class="tittle_headder">
-            <p>Crie seu personagem de D&D</p>
+            <h2>Crie seu personagem de D&D</h2>
 
         </div>
         <div class="sec_header">
 
-            <div class="box_links">
-                <a href="ficha.html" class="linkpaginas">Ficha</a>
-            </div>
-            <div class="box_links">
-                <a href="magias.html" class="linkpaginas">Magias</a>
-            </div>
-            <div class="box_links">
-                <a href="livros.html" class="linkpaginas">Livros</a>
-            </div>
-            <div class="box_links">
-                <a href="index.html" class="linkpaginas">Inicio</a>
-            </div>
+            <button onclick="TrocarFicha()" >Ficha</button>
+            <button onclick="TrocarMagias()" class="linkpaginas">Magias</button>
+            <button onclick="TrocarLivros()" class="linkpaginas">Livros</button>
+            <button onclick="TrocarInicio()" class="linkpaginas">Inicio</button>
+           
 
 
         </div>
     </header>
-    <main >
+    <main  class="magias">
         <div class="box botoes_magias">
             <a class="navmagias" href="">Truques</a>
             <a class="navmagias" href="1nivel">1° nível</a>

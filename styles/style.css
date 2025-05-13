@@ -1,7 +1,8 @@
 header {
-    height: 15%;
+    height: 18%;
     width: 100%;
     background-color: brown;
+    overflow: hidden;
 
 }
 
@@ -9,13 +10,8 @@ header {
     text-decoration: underline;
     text-shadow: 2px 2px gray;
 
-    font-size: 200%;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-wrap: wrap;
+    
+   
     text-align: center;
 
 }
@@ -24,6 +20,25 @@ header {
     display: flex;
     
 }
+
+.sec_header button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  .sec_header button:hover {
+    background-color: rgb(104, 27, 27);
+  }
+  
+  
+  
+  
+
 
 body {
 
@@ -182,16 +197,9 @@ main {
 
 }
 
-.linkpaginas{
-    color: black;
-    text-decoration: none;
-    
-}
-.box_links{
-    background-color: rgb(138, 35, 35);
-    width: 5%;
-    text-align: center;
-}
-.box_links.active {
- background-color: blue;
-}
+
+
+
+  
+  
+  

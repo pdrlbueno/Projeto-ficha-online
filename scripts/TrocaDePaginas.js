@@ -49,3 +49,7 @@ function TrocarLivros(){
 function TrocarInicio(){
   window.location.replace("index.html")
 }
+
+function CriarFicha(){
+  window.location.replace("criarPersonagem.html")
+}

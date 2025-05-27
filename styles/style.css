@@ -1,10 +1,9 @@
 header {
-    height: 16%;
     width: 100%;
     background-color: brown;
     overflow: hidden;
-    
-    
+
+
 }
 
 .tittle_headder {
@@ -18,7 +17,9 @@ header {
 }
 
 .sec_header {
-    display: inline;
+    display: flex;
+    background-color: rgb(104, 27, 27);
+    width: 100%;
 }
 
 .sec_header button {
@@ -29,15 +30,15 @@ header {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-}
-
-.sec_header button:hover {
     background-color: rgb(104, 27, 27);
 }
 
+.sec_header button:hover {
+    background-color: brown;
+
+}
+
 body {
-
-
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0%;
@@ -105,6 +106,7 @@ main {
 
 
 }
+
 .livro {
     width: 100%;
     height: 40%;
@@ -156,10 +158,11 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    flex-direction: column;
     display: flex;
 
-   
 }
+
 .box {
     background-color: azure;
     border-style: groove;
@@ -168,16 +171,78 @@ main {
     justify-content: center;
     margin: 2px;
     width: 100%;
-    text-align:justify;
+    text-align: justify;
 
 
 }
+
 .status {
     margin: 5px;
 }
+
 .flex {
     display: flex;
     padding: 0%;
     flex-wrap: wrap;
 
+}
+
+.criarPersonagem {
+    background-color: rgb(104, 27, 27);
+    border-color: black;
+    border-style: groove;
+    padding: 5px;
+    margin: 2px;
+    width: 100%;
+    text-align: justify;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.buttonAdi {
+    font-size: 200%;
+    background-color: brown;
+    margin: 5%;
+    width: 70%;
+}
+
+.criarFicha {
+    background-image: url('../assets/images/background_ficha.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+
+}
+
+.titleMagia {
+    display: flex;
+    align-items: center;
+    border: 3px;
+    border-style: solid;
+    padding: 0;
+}
+
+.boxMagias {
+    text-align: center;
+    padding: 2px;
+    border: solid black;
+    margin: 3px;
+}
+.coutainerMagias{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inputMagia {
+    background-color: azure;
+    margin: 2px;
+    width: 98%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid black;
+    outline: none;
 }

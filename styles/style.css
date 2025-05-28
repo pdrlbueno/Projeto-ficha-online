@@ -188,10 +188,7 @@ main {
 
 /*pagina criar personagem*/
 .criarFicha {
-    background-image: url('../assets/images/background_ficha.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+
     padding-left: 1px;
     padding-right: 1px;
 
@@ -212,8 +209,8 @@ main {
 .separar {
     margin: 5px;
     border: 4px black;
-    
-   
+
+
 }
 
 .caixa input {
@@ -249,12 +246,23 @@ main {
     outline: none;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-auto-rows: auto;
 }
 
-.flex{
+.flex {
     display: flex;
-    
+
+}
+
+.estender {
+    height: 100%;
+}
+
+.bodyFicha {
+    background-image: url('../assets/images/background_ficha.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }

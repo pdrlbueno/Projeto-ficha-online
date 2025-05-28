@@ -152,7 +152,7 @@ main {
 
 }
 
-/* ficha/index */
+/*pagina ficha*/
 .ficha {
     background-image: url('../assets/images/background_ficha.png');
     background-repeat: no-repeat;
@@ -163,27 +163,7 @@ main {
 
 }
 
-.box {
-    background-color: azure;
-    border-style: groove;
-    border-color: black;
-    padding: 1%;
-    margin: 0.5%;
-    width: 100%;
 
-
-}
-
-.status {
-    margin: 1%;
-}
-
-.flex {
-    display: flex;
-    padding: 0%;
-    flex-wrap: wrap;
-
-}
 
 .criarPersonagem {
     background-color: rgb(104, 27, 27);
@@ -206,6 +186,7 @@ main {
     width: 70%;
 }
 
+/*pagina criar personagem*/
 .criarFicha {
     background-image: url('../assets/images/background_ficha.png');
     background-repeat: no-repeat;
@@ -213,38 +194,15 @@ main {
     background-size: cover;
     padding-left: 1px;
     padding-right: 1px;
-    display: grid;
-    grid-template-columns: 39% 59%;
+    
 }
 
-.titleMagia {
+.caixa{
+    background-color: brown;
+    border-color: black;
+    border-style: groove;
+    text-align: justify;
     display: flex;
     align-items: center;
-    border: 3px;
-    border-style: solid;
-    padding: 0;
-}
-
-.boxMagias {
-    text-align: center;
-    padding: 1%;
-    border: solid black;
-    margin: 0.5%;
-}
-
-.coutainerMagias {
-    text-align: center;
     display: flex;
-    flex-wrap: wrap;
-}
-
-.inputMagia {
-    background-color: azure;
-    margin: 2px;
-    width: 98%;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-style: solid black;
-    outline: none;
 }

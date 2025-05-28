@@ -194,15 +194,67 @@ main {
     background-size: cover;
     padding-left: 1px;
     padding-right: 1px;
-    
+
 }
 
-.caixa{
+.caixa {
     background-color: brown;
     border-color: black;
     border-style: groove;
     text-align: justify;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     display: flex;
+    padding: 1px;
+    flex-wrap: wrap;
+}
+
+.separar {
+    margin: 5px;
+    border: 4px black;
+    
+   
+}
+
+.caixa input {
+    background-color: white;
+    border-color: black;
+    border: 1;
+    border-radius: 3;
+}
+
+.NomeMagia {
+    border: 3px;
+    border-style: solid;
+    padding: 0;
+    text-align: center;
+}
+
+.boxMagias {
+    text-align: center;
+    padding: 1%;
+    border: solid black;
+    margin: 0.5%;
+    grid-area: boxMagias;
+}
+
+.boxmagias input {
+    background-color: brown;
+    margin: 2px;
+    width: 98%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid black;
+    outline: none;
+}
+
+.grid{
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.flex{
+    display: flex;
+    
 }

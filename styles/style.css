@@ -200,8 +200,8 @@ main {
 /*pagina criar personagem*/
 .criarFicha {
 
-    padding-left: 1px;
-    padding-right: 1px;
+    padding-left: 5%;
+    padding-right: 5%;
 
 }
 
@@ -223,7 +223,18 @@ main {
 
 
 }
-
+.caixaMagias {
+    background-color: brown;
+    border-color: black;
+    border-style: groove;
+    text-align: justify;
+    display: flex;
+    align-items: flex-start;
+    display: flex;
+    padding: 1px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .caixa input {
     background-color: white;
     border-color: black;

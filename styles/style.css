@@ -223,7 +223,7 @@ main {
 
 
 }
-.caixaMagias {
+.containerMagias {
     background-color: brown;
     border-color: black;
     border-style: groove;
@@ -287,4 +287,34 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.ContainerClasseDesc{
+    background-color: brown;
+    border-color: black;
+    border-style: groove;
+    text-align: justify;
+    display: flex;
+    align-items: flex-start;
+    display: flex;
+    padding: 1px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#classeDesc{
+    background-color: brown;
+    margin: 5px;
+    width: 100px;
+    height: 50px;
+    font-size: medium;
+    border-radius: 10px;
+}
+
+.ContainerClasse{
+    height: 100%;
+    width: 100%;
+    border: 0;
+    display: none;
+
 }

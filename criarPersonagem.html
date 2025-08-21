@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="scripts/TrocaDePaginas.js"></script>
+    <script src="scripts/DescClasses.js"></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body class="bodyFicha" >
+<body class="bodyFicha">
     <header>
         <div class="tittle_headder">
             <h2>Crie seu personagem de D&D</h2>
@@ -29,7 +30,7 @@
             <div class="flex">
 
                 <div>
-    
+
                     <div class="caixa ">
                         <div class="separar">
                             <label for="Jname">Nome do jogador:</label><br>
@@ -43,7 +44,7 @@
                             <label for="nivel">Nível do personagem:</label>
                             <input type="number" id="nivel" name="nivel" min="1" max="20" class="caixa"><br>
                         </div>
-    
+
                         <div class="separar">
                             <label for="peso">Peso do personagem(Kg):</label>
                             <input type="number" id="peso" name="peso" min="1" class="caixa">
@@ -56,7 +57,7 @@
                             <input type="color" id="pele" name="pele"><br>
                         </div>
                     </div>
-    
+
                     <div class="caixa ">
                         <div class="separar">
                             <label for="deslocamento">Deslocamento(m)</label><br>
@@ -66,7 +67,7 @@
                             <label for="Dvida">Dado de vida</label><br>
                             <input type="number" id="Dvida" name="Dvida" class="status">
                         </div>
-    
+
                         <div class="separar">
                             <p>Raça:</p>
                             <select name="raça" id="raça">
@@ -84,7 +85,7 @@
                             <br>
                             <label for="Antecedente">Antecedente:</label><br>
                             <input type="text" id="Antecedente" name="Antecedente">
-    
+
                             <p> Alinhamento:</p>
                             <select name="alinhamento" id="alinhamento">
                                 <option value="nulo">....</option>
@@ -99,57 +100,57 @@
                                 <option value="CM">Caótico e Mal</option>
                             </select>
                         </div>
-    
+
                         <div class="separar">
-    
+
                             <label for="conjuração">Atributo de conjuração</label><br>
                             <input type="text" id="conjuração" name="conjuração" class="status"><br>
-    
-    
+
+
                             <label for="CDmagias">Cd para magias</label><br>
                             <input type="number" id="CDmagias" name="CDmagias" class="status"><br>
-    
-    
+
+
                             <label for="MODmagia">Modificador de magia</label><br>
                             <input type="number" id="MODmagia" name="MODmagia" class="status"><br>
-    
+
                         </div>
-    
-    
+
+
                     </div>
-    
+
                     <div class="caixa ">
                         <div class="separar">
-    
+
                             <label for="Sforça">Força</label><br>
                             <input type="number" id="Sforça" name="Sforça" class="status"><br>
-    
-    
+
+
                             <label for="Sdestreza">Destreza</label><br>
                             <input type="number" id="Sdestreza" name="Sdestreza" class="status"><br>
-    
-    
+
+
                             <label for="Sconstituição">Constituição</label><br>
                             <input type="number" id="Sconstituição" name="Sconstituição" class="status"><br>
-    
+
                         </div>
-    
+
                         <div class="separar">
                             <label for="SInteligência">Inteligência</label><br>
                             <input type="number" id="SInteligência" name="SInteligência" class="status"><br>
-    
-    
+
+
                             <label for="SSabedoria">Sabedoria</label><br>
                             <input type="number" id="SSabedoria" name="SSabedoria" class="status"><br>
-    
-    
+
+
                             <label for="SCarisma">Carisma</label><br>
                             <input type="number" id="SCarisma" name="SCarisma" class="status"><br>
                         </div>
 
                         <div class="separar">
                             <p>Selecione suas armas:</p>
-    
+
                             <select name="armas1" id="armas1">
                                 <option value="nulo">....</option>
                                 <option value="adaga">Adaga 1d4</option>
@@ -268,7 +269,7 @@
                                 <option value="zarabatana">Zarabatana 1d4</option>
                             </select>
                             <p>Escolha sua armadura</p>
-    
+
                             <select id="armaduras" name="armaduras">
                                 <option value="nulo">....</option>
                                 <option value="acolchoada">Acolchoada (11 + Des)</option>
@@ -283,22 +284,22 @@
                                 <option value="cota_de_malha">Cota de malha (16)</option>
                                 <option value="cota_de_talas">Cota de talas (17)</option>
                                 <option value="placas">Placas (18)</option>
-    
+
                             </select>
-    
+
                             <p>Usa escudo?</p>
                             <input type="radio" id="sim" name="escudo" value="sim">
                             <label for="sim"> Sim</label>
                             <input type="radio" id="não" name="escudo" value="não">
                             <label for="não"> Não</label><br>
                         </div>
-    
+
                     </div>
-    
+
                     <div class="caixa ">
                         <div class="separar">
                             <p>Perícias com proficiência</p>
-    
+
                             <input type="checkbox" name="Persuasão" value="Persuasão">
                             <label for="Persuasão">Persuasão</label><br>
                             <input type="checkbox" name="Prestidigitação" value="Prestidigitação">
@@ -335,11 +336,11 @@
                             <label for="Atletismo">Atletismo</label><br>
                             <input type="checkbox" name="Atuação" value="Atuação">
                             <label for="Atuação">Atuação</label><br>
-    
+
                         </div>
                         <div class="separar">
                             <p>Selecione uma classe:</p>
-    
+
                             <input type="radio" id="Bárbaro" name="classe" value="Bárbaro">
                             <label for="Bárbaro">Bárbaro</label><br>
                             <input type="radio" id="Bardo" name="classe" value="Bardo">
@@ -363,10 +364,10 @@
                             <input type="radio" id="Patrulheiro" name="classe" value="Patrulheiro">
                             <label for="Patrulheiro">Patrulheiro</label><br>
                         </div>
-    
+
                         <div class="separar">
                             <p>Salvaguardas com proficiência</p>
-    
+
                             <input type="checkbox" id="Força" name="Força" value="Força">
                             <label for="Força"> Força</label><br>
                             <input type="checkbox" id="Destreza" name="Destreza" value="Destreza">
@@ -380,21 +381,21 @@
                             <input type="checkbox" id="Carisma" name="Carisma" value="Carisma">
                             <label for="Carisma"> Carisma</label><br>
                         </div>
-    
-                        
-    
+
+
+
                     </div>
-    
+
                 </div>
-    
+
                 <div>
-    
-                    <div class="caixaMagias">
+
+                    <div class="containerMagias">
                         <div class="boxMagias">
                             <div class="NomeMagia">
                                 <p>TRUQUES</p>
                             </div>
-    
+
                             <div>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
@@ -404,14 +405,14 @@
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia">
-    
+
                             </div>
                         </div>
                         <div class="boxMagias">
                             <div class="NomeMagia">
                                 <p>1</p>
                             </div>
-    
+
                             <div>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
@@ -421,14 +422,14 @@
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia">
-    
+
                             </div>
                         </div>
                         <div class="boxMagias">
                             <div class="NomeMagia">
                                 <p>TRUQUES</p>
                             </div>
-    
+
                             <div>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
@@ -438,14 +439,14 @@
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia">
-    
+
                             </div>
                         </div>
                         <div class="boxMagias">
                             <div class="NomeMagia">
                                 <p>TRUQUES</p>
                             </div>
-    
+
                             <div>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
@@ -455,14 +456,14 @@
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia">
-    
+
                             </div>
                         </div>
                         <div class="boxMagias">
                             <div class="NomeMagia">
                                 <p>TRUQUES</p>
                             </div>
-    
+
                             <div>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
@@ -472,14 +473,14 @@
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia">
-    
+
                             </div>
                         </div>
                         <div class="boxMagias">
                             <div class="NomeMagia">
                                 <p>TRUQUES</p>
                             </div>
-    
+
                             <div>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
@@ -489,14 +490,14 @@
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia">
-    
+
                             </div>
                         </div>
                         <div class="boxMagias">
                             <div class="NomeMagia">
                                 <p>TRUQUES</p>
                             </div>
-    
+
                             <div>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
@@ -506,14 +507,14 @@
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia">
-    
+
                             </div>
                         </div>
                         <div class="boxMagias">
                             <div class="NomeMagia">
                                 <p>TRUQUES</p>
                             </div>
-    
+
                             <div>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
@@ -523,14 +524,14 @@
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia">
-    
+
                             </div>
                         </div>
                         <div class="boxMagias">
                             <div class="NomeMagia">
                                 <p>TRUQUES</p>
                             </div>
-    
+
                             <div>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
@@ -540,14 +541,14 @@
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia">
-    
+
                             </div>
                         </div>
                         <div class="boxMagias">
                             <div class="NomeMagia">
                                 <p>TRUQUES</p>
                             </div>
-    
+
                             <div>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
@@ -557,11 +558,28 @@
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia"><br>
                                 <input type="text" class="inputMagia">
-    
+
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="ContainerClasseDesc">
+                        <select name="classeDesc" id="classeDesc" onchange="mostrarclasse()">
+                            <option value="">...</option>
+                            <option value="infoBarbaro" >Bárbaro</option>
+                            <option value="infoGuerreiro" >Guerreiro</option>
+                        </select>
+
+                        
+
+                        <iframe src="Descricao_classes/barbaro.html"  class="ContainerClasse" id="infoBarbaro"></iframe>
+                        <iframe src="Descricao_classes/guerreiro.html"  class="ContainerClasse" id="infoGuerreiro"></iframe>
+
+                    </div>
+
                 </div>
+
 
             </div>
 

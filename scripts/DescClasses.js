@@ -3,9 +3,12 @@ function mostrarclasse() {
     const valor = document.getElementById("classeDesc").value;
 
     const info = document.getElementsByClassName("ContainerClasse");
-    info.forEach(style.display = "none");
     
-    
+    for (let i = 0; i < info.length; i++) {
+        info[i].style.display = "none";
+    }
+
+
 
 
 

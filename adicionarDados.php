@@ -1,0 +1,128 @@
+<?php
+    include 'db.php';
+
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $Jname   = $_POST['Jname'];     
+        $Pname   = $_POST['Pname'];   
+        $idade   = $_POST['idade'];   
+        $altura  = $_POST['altura'];   
+        $nivel   = $_POST['nivel'];    
+        $peso    = $_POST['peso'];      
+        $Cabelo  = $_POST['Cabelo'];    
+        $olhos   = $_POST['olhos'];     
+        $pele    = $_POST['pele'];      
+        $deslocamento  = $_POST['deslocamento'];  
+        $Pvida         = $_POST['Pvida'];          
+        $Dvida         = $_POST['Dvida'];           
+        $raça          = $_POST['raça'];          
+        $Antecedente   = $_POST['Antecedente'];    
+        $alinhamento  = $_POST['alinhamento'];  
+        $conjuracao   = $_POST['conjuração'];   
+        $CDmagias     = $_POST['CDmagias'];     
+        $MODmagia     = $_POST['MODmagia'];     
+        $Sforca         = $_POST['Sforça'];        
+        $Sdestreza      = $_POST['Sdestreza'];     
+        $Sconstituicao  = $_POST['Sconstituição'];  
+        $Sinteligencia  = $_POST['SInteligência'];  
+        $Ssabedoria     = $_POST['SSabedoria'];    
+        $Scarismo       = $_POST['SCarisma'];     
+        $armas1 = $_POST['armas1'];  
+        $armas2 = $_POST['armas2'];  
+        $armas3 = $_POST['armas3'];  
+        $armadura = $_POST['armaduras']; 
+        $escudo   = $_POST['escudo'];     
+        $pericia = implode(",", $_POST['pericia']);
+        $classe = implode(",", $_POST['classe']);
+        $salvaguarda = implode(",", $_POST['salvaguarda ']); 
+        $magia1 = $_POST['magia1'];
+        $magia2 = $_POST['magia2'];
+        $magia3 = $_POST['magia3'];
+        $magia4 = $_POST['magia4'];
+        $magia5 = $_POST['magia5'];
+        $magia6 = $_POST['magia6'];
+        $magia7 = $_POST['magia7'];
+        $magia8 = $_POST['magia8'];
+        $magia9 = $_POST['magia9'];
+        $magia10 = $_POST['magia10'];
+        $magia11 = $_POST['magia11'];
+        $magia12 = $_POST['magia12'];
+        $magia13 = $_POST['magia13'];
+        $magia14 = $_POST['magia14'];
+        $magia15 = $_POST['magia15'];
+        $magia16 = $_POST['magia16'];
+        $magia17 = $_POST['magia17'];
+        $magia18 = $_POST['magia18'];
+        $magia19 = $_POST['magia19'];
+        $magia20 = $_POST['magia20'];
+        $magia21 = $_POST['magia21'];
+        $magia22 = $_POST['magia22'];
+        $magia23 = $_POST['magia23'];
+        $magia24 = $_POST['magia24'];
+        $magia25 = $_POST['magia25'];
+        $magia26 = $_POST['magia26'];
+        $magia27 = $_POST['magia27'];
+        $magia28 = $_POST['magia28'];
+        $magia29 = $_POST['magia29'];
+        $magia30 = $_POST['magia30'];
+        $magia31 = $_POST['magia31'];
+        $magia32 = $_POST['magia32'];
+        $magia33 = $_POST['magia33'];
+        $magia34 = $_POST['magia34'];
+        $magia35 = $_POST['magia35'];
+        $magia36 = $_POST['magia36'];
+        $magia37 = $_POST['magia37'];
+        $magia38 = $_POST['magia38'];
+        $magia39 = $_POST['magia39'];
+        $magia40 = $_POST['magia40'];
+        $magia41 = $_POST['magia41'];
+        $magia42 = $_POST['magia42'];
+        $magia43 = $_POST['magia43'];
+        $magia44 = $_POST['magia44'];
+        $magia45 = $_POST['magia45'];
+        $magia46 = $_POST['magia46'];
+        $magia47 = $_POST['magia47'];
+        $magia48 = $_POST['magia48'];
+        $magia49 = $_POST['magia49'];
+        $magia50 = $_POST['magia50'];
+        $magia51 = $_POST['magia51'];
+        $magia52 = $_POST['magia52'];
+        $magia53 = $_POST['magia53'];
+        $magia54 = $_POST['magia54'];
+        $magia55 = $_POST['magia55'];
+        $magia56 = $_POST['magia56'];
+        $magia57 = $_POST['magia57'];
+        $magia58 = $_POST['magia58'];
+        $magia59 = $_POST['magia59'];
+        $magia60 = $_POST['magia60'];
+        $magia61 = $_POST['magia61'];
+        $magia62 = $_POST['magia62'];
+        $magia63 = $_POST['magia63'];
+        $magia64 = $_POST['magia64'];
+        $magia65 = $_POST['magia65'];
+        $magia66 = $_POST['magia66'];
+        $magia67 = $_POST['magia67'];
+        $magia68 = $_POST['magia68'];
+        $magia69 = $_POST['magia69'];
+        $magia70 = $_POST['magia70'];
+        $magia71 = $_POST['magia71'];
+        $magia72 = $_POST['magia72'];
+        $magia73 = $_POST['magia73'];
+        $magia74 = $_POST['magia74'];
+        $magia75 = $_POST['magia75'];
+        $magia76 = $_POST['magia76'];
+        $magia77 = $_POST['magia77'];
+        $magia78 = $_POST['magia78'];
+        $magia79 = $_POST['magia79'];
+        $magia80 = $_POST['magia80'];
+
+         $sql = " INSERT INTO equipamento (escudo,arma_primaria,arma_terciaria,arma_secundaria,aradura) VALUE ('$escudo','$armas1','$armas3','$armas2','$armadura')";
+
+         $sql = " INSERT INTO statusPer (escudo,arma_primaria,arma_terciaria,arma_secundaria,aradura) VALUE ('$escudo','$armas1','$armas3','$armas2','$armadura')";
+
+         $sql = " INSERT INTO equipamento (escudo,arma_primaria,arma_terciaria,arma_secundaria,aradura) VALUE ('$escudo','$armas1','$armas3','$armas2','$armadura')";
+
+
+        
+  
+    }
+?>

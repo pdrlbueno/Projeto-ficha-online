@@ -1,198 +1,199 @@
-create database database_ficha;
-use database_ficha;
+CREATE DATABASE database_ficha;
+USE database_ficha;
 
-create table persona(
-    id int not null auto_increment,
-    nome_jogador varchar(45) ,
-    nome_personagem varchar(45) ,
-    idade int ,
-    altura decimal(1,2) ,
-    nivel int ,
-    peso decimal(1,2), 
-    cor_cabelo varchar(9) ,
-    cor_olho  varchar(9) ,
-    cor_pele  varchar(9) ,
-    deslocamento int ,
-    pontos_vida int ,
-    dado_vida varchar(3),
-    quantidade_dado int,
-    raca varchar(45),
-    antecedente varchar(45),
-    alinhamento varchar(45),
-    atributo_conju varchar(45),
-    cd_magias varchar(45),
-    modificador_magias int,
-    classe varchar(45),
-    fk_equipamento int not null, 
+CREATE TABLE equipamento (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    escudo BOOLEAN,
+    arma_primaria VARCHAR(45),
+    arma_terciaria VARCHAR(45),
+    arma_secundaria VARCHAR(45),
+    aradura VARCHAR(45),
+    itens VARCHAR(100)
+);
+
+CREATE TABLE statusPer (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    forca INT,
+    destreza INT,
+    constituica INT,
+    inteligencia INT,
+    sabedoria INT,
+    carisma INT,
+    pericia INT,
+    salvaguarda INT,
+    ModForca INT,
+    ModDestreza INT,
+    ModConst INT,
+    ModInt INT,
+    ModCari INT
+);
+
+CREATE TABLE truques (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    linha_1 VARCHAR(45),
+    linha_2 VARCHAR(45),
+    linha_3 VARCHAR(45),
+    linha_4 VARCHAR(45),
+    linha_5 VARCHAR(45),
+    linha_6 VARCHAR(45),
+    linha_7 VARCHAR(45),
+    linha_8 VARCHAR(45)
+);
+
+-- Repetir a mesma lógica para os círculos
+CREATE TABLE pri_circulo (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    pri_linha_1 VARCHAR(45),
+    pri_linha_2 VARCHAR(45),
+    pri_linha_3 VARCHAR(45),
+    pri_linha_4 VARCHAR(45),
+    pri_linha_5 VARCHAR(45),
+    pri_linha_6 VARCHAR(45),
+    pri_linha_7 VARCHAR(45),
+    pri_linha_8 VARCHAR(45)
+);
+
+CREATE TABLE seg_circulo (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    seg_linha_1 VARCHAR(45),
+    seg_linha_2 VARCHAR(45),
+    seg_linha_3 VARCHAR(45),
+    seg_linha_4 VARCHAR(45),
+    seg_linha_5 VARCHAR(45),
+    seg_linha_6 VARCHAR(45),
+    seg_linha_7 VARCHAR(45),
+    seg_linha_8 VARCHAR(45)
+);
+
+CREATE TABLE ter_circulo (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    ter_linha_1 VARCHAR(45),
+    ter_linha_2 VARCHAR(45),
+    ter_linha_3 VARCHAR(45),
+    ter_linha_4 VARCHAR(45),
+    ter_linha_5 VARCHAR(45),
+    ter_linha_6 VARCHAR(45),
+    ter_linha_7 VARCHAR(45),
+    ter_linha_8 VARCHAR(45)
+);
+
+CREATE TABLE quar_circulo (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    quar_linha_1 VARCHAR(45),
+    quar_linha_2 VARCHAR(45),
+    quar_linha_3 VARCHAR(45),
+    quar_linha_4 VARCHAR(45),
+    quar_linha_5 VARCHAR(45),
+    quar_linha_6 VARCHAR(45),
+    quar_linha_7 VARCHAR(45),
+    quar_linha_8 VARCHAR(45)
+);
+
+CREATE TABLE quin_circulo (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    quin_linha_1 VARCHAR(45),
+    quin_linha_2 VARCHAR(45),
+    quin_linha_3 VARCHAR(45),
+    quin_linha_4 VARCHAR(45),
+    quin_linha_5 VARCHAR(45),
+    quin_linha_6 VARCHAR(45),
+    quin_linha_7 VARCHAR(45),
+    quin_linha_8 VARCHAR(45)
+);
+
+CREATE TABLE sext_circulo (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    sext_linha_1 VARCHAR(45),
+    sext_linha_2 VARCHAR(45),
+    sext_linha_3 VARCHAR(45),
+    sext_linha_4 VARCHAR(45),
+    sext_linha_5 VARCHAR(45),
+    sext_linha_6 VARCHAR(45),
+    sext_linha_7 VARCHAR(45),
+    sext_linha_8 VARCHAR(45)
+);
+
+CREATE TABLE set_circulo (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    set_linha_1 VARCHAR(45),
+    set_linha_2 VARCHAR(45),
+    set_linha_3 VARCHAR(45),
+    set_linha_4 VARCHAR(45),
+    set_linha_5 VARCHAR(45),
+    set_linha_6 VARCHAR(45),
+    set_linha_7 VARCHAR(45),
+    set_linha_8 VARCHAR(45)
+);
+
+CREATE TABLE oitavo_circulo (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    oitavo_linha_1 VARCHAR(45),
+    oitavo_linha_2 VARCHAR(45),
+    oitavo_linha_3 VARCHAR(45),
+    oitavo_linha_4 VARCHAR(45),
+    oitavo_linha_5 VARCHAR(45),
+    oitavo_linha_6 VARCHAR(45),
+    oitavo_linha_7 VARCHAR(45),
+    oitavo_linha_8 VARCHAR(45)
+);
+
+CREATE TABLE nono_circulo (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nono_linha_1 VARCHAR(45),
+    nono_linha_2 VARCHAR(45),
+    nono_linha_3 VARCHAR(45),
+    nono_linha_4 VARCHAR(45),
+    nono_linha_5 VARCHAR(45),
+    nono_linha_6 VARCHAR(45),
+    nono_linha_7 VARCHAR(45),
+    nono_linha_8 VARCHAR(45)
+);
+
+-- Agora sim, criar a tabela persona com todas as referências válidas
+CREATE TABLE persona (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nome_jogador VARCHAR(45),
+    nome_personagem VARCHAR(45),
+    idade INT,
+    altura VARCHAR(45),
+    nivel INT,
+    peso VARCHAR(45),
+    cor_cabelo VARCHAR(9),
+    cor_olho VARCHAR(9),
+    cor_pele VARCHAR(9),
+    deslocamento INT,
+    pontos_vida INT,
+    dado_vida VARCHAR(3),
+    quantidade_dado INT,
+    raca VARCHAR(45),
+    antecedente VARCHAR(45),
+    alinhamento VARCHAR(45),
+    atributo_conju VARCHAR(45),
+    cd_magias VARCHAR(45),
+    modificador_magias INT,
+    classe VARCHAR(45),
+    fk_equipamento INT NOT NULL,
+    fk_status INT NOT NULL,
+    fk_truques INT NOT NULL,
+    fk_pri_circulo INT NOT NULL,
+    fk_seg_circulo INT NOT NULL,
+    fk_ter_circulo INT NOT NULL,
+    fk_quar_circulo INT NOT NULL,
+    fk_quin_circulo INT NOT NULL,
+    fk_sext_circulo INT NOT NULL,
+    fk_set_circulo INT NOT NULL,
+    fk_oitavo_circulo INT NOT NULL,
+    fk_nono_circulo INT NOT NULL,
     FOREIGN KEY (fk_equipamento) REFERENCES equipamento(id),
-    fk_status int not null,
     FOREIGN KEY (fk_status) REFERENCES statusPer(id),
-    fk_truques int not null,
     FOREIGN KEY (fk_truques) REFERENCES truques(id),
-    fk_1_circulo int not null,
-    FOREIGN KEY (fk_truques) REFERENCES 1circulo(id),
-    fk_2_circulo int not null,
-    FOREIGN KEY (fk_truques) REFERENCES 2circulo(id),
-    fk_3_circulo int not null,
-    FOREIGN KEY (fk_truques) REFERENCES 3circulo(id),
-    fk_4_circulo int not null,
-    FOREIGN KEY (fk_truques) REFERENCES 4circulo(id),
-    fk_5_circulo int not null,
-    FOREIGN KEY (fk_truques) REFERENCES 5circulo(id),
-    fk_6_circulo int not null,
-    FOREIGN KEY (fk_truques) REFERENCES 6circulo(id),
-    fk_7_circulo int not null,
-    FOREIGN KEY (fk_truques) REFERENCES 7circulo(id),
-    fk_8_circulo int not null,
-    FOREIGN KEY (fk_truques) REFERENCES 8circulo(id),
-    fk_9_circulo int not null,
-    FOREIGN KEY (fk_truques) REFERENCES 9circulo(id)
-);
-
-create table equipamento (
-    id int not null auto_increment,
-    escudo boolean,
-    arma_primaria varchar(45),
-    arma_terciaria varchar(45),
-    arma_secundaria varchar(45),
-    aradura  varchar(45),
-    itens varchar(100)
-);
-
-create table statusPer (
-    id int not null auto_increment,
-    forca int,
-    destreza int,
-    constituica int,
-    inteligencia int,
-    sabedoria int,
-    carisma int,
-    pericia int,
-    salvaguarda int,
-    ModForca
-    ModDestreza
-    ModConst
-    ModInt
-    ModCari
-
-);
-
-create table truques (
-    id int primary key not null  auto_increment,
-    linha_1 varchar(45),
-    linha_2 varchar(45),
-    linha_3 varchar(45),
-    linha_4 varchar(45),
-    linha_5 varchar(45),
-    linha_6 varchar(45),
-    linha_7 varchar(45),
-    linha_7 varchar(45)
-);
-
-create table 1circulo (
-    id int primary key not null  auto_increment,
-    linha_1 varchar(45),
-    linha_2 varchar(45),
-    linha_3 varchar(45),
-    linha_4 varchar(45),
-    linha_5 varchar(45),
-    linha_6 varchar(45),
-    linha_7 varchar(45),
-    linha_7 varchar(45)
-);
-
-create table 2circulo (
-    id int primary key not null  auto_increment,
-    linha_1 varchar(45),
-    linha_2 varchar(45),
-    linha_3 varchar(45),
-    linha_4 varchar(45),
-    linha_5 varchar(45),
-    linha_6 varchar(45),
-    linha_7 varchar(45),
-    linha_7 varchar(45)
-);
-
-create table 3circulo (
-    id int primary key not null  auto_increment,
-    linha_1 varchar(45),
-    linha_2 varchar(45),
-    linha_3 varchar(45),
-    linha_4 varchar(45),
-    linha_5 varchar(45),
-    linha_6 varchar(45),
-    linha_7 varchar(45),
-    linha_7 varchar(45)
-);
-
-create table 4circulo (
-    id int primary key not null  auto_increment,
-    linha_1 varchar(45),
-    linha_2 varchar(45),
-    linha_3 varchar(45),
-    linha_4 varchar(45),
-    linha_5 varchar(45),
-    linha_6 varchar(45),
-    linha_7 varchar(45),
-    linha_7 varchar(45)
-);
-
-create table 5circulo (
-    id int primary key not null  auto_increment,
-    linha_1 varchar(45),
-    linha_2 varchar(45),
-    linha_3 varchar(45),
-    linha_4 varchar(45),
-    linha_5 varchar(45),
-    linha_6 varchar(45),
-    linha_7 varchar(45),
-    linha_7 varchar(45)
-);
-
-create table 6circulo (
-    id int primary key not null  auto_increment,
-    linha_1 varchar(45),
-    linha_2 varchar(45),
-    linha_3 varchar(45),
-    linha_4 varchar(45),
-    linha_5 varchar(45),
-    linha_6 varchar(45),
-    linha_7 varchar(45),
-    linha_7 varchar(45)
-);
-
-create table 7circulo (
-    id int primary key not null  auto_increment,
-    linha_1 varchar(45),
-    linha_2 varchar(45),
-    linha_3 varchar(45),
-    linha_4 varchar(45),
-    linha_5 varchar(45),
-    linha_6 varchar(45),
-    linha_7 varchar(45),
-    linha_7 varchar(45)
-);
-
-create table 8circulo (
-    id int primary key not null  auto_increment,
-    linha_1 varchar(45),
-    linha_2 varchar(45),
-    linha_3 varchar(45),
-    linha_4 varchar(45),
-    linha_5 varchar(45),
-    linha_6 varchar(45),
-    linha_7 varchar(45),
-    linha_7 varchar(45)
-);
-
-create table 9circulo (
-    id int primary key not null  auto_increment,
-    linha_1 varchar(45),
-    linha_2 varchar(45),
-    linha_3 varchar(45),
-    linha_4 varchar(45),
-    linha_5 varchar(45),
-    linha_6 varchar(45),
-    linha_7 varchar(45),
-    linha_7 varchar(45)
+    FOREIGN KEY (fk_pri_circulo) REFERENCES pri_circulo(id),
+    FOREIGN KEY (fk_seg_circulo) REFERENCES seg_circulo(id),
+    FOREIGN KEY (fk_ter_circulo) REFERENCES ter_circulo(id),
+    FOREIGN KEY (fk_quar_circulo) REFERENCES quar_circulo(id),
+    FOREIGN KEY (fk_quin_circulo) REFERENCES quin_circulo(id),
+    FOREIGN KEY (fk_sext_circulo) REFERENCES sext_circulo(id),
+    FOREIGN KEY (fk_set_circulo) REFERENCES set_circulo(id),
+    FOREIGN KEY (fk_oitavo_circulo) REFERENCES oitavo_circulo(id),
+    FOREIGN KEY (fk_nono_circulo) REFERENCES nono_circulo(id)
 );

@@ -16,12 +16,7 @@
 
         </div>
         <div class="sec_header">
-            <button onclick="TrocarFicha()" class="linkpaginas">Ficha</button>
-            <button onclick="TrocarMagias()" class="linkpaginas">Magias</button>
-            <button onclick="TrocarLivros()" class="linkpaginas">Livros</button>
-            <button onclick="TrocarInicio()" class="linkpaginas">Inicio</button>
-
-
+            <button onclick="TrocarFicha()" class="linkpaginas">Inicio</button>
         </div>
     </header>
 

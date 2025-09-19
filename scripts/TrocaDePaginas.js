@@ -7,7 +7,7 @@ function TrocarMagias(){
 }
 
 function TrocarFicha(){
-  window.location.replace("ficha.html")
+  window.location.replace("index.php")
 }
 
 function TrocarLivros(){
@@ -19,7 +19,7 @@ function TrocarInicio(){
 }
 
 function CriarFicha(){
-  window.location.replace("criarPersonagem.html")
+  window.location.replace("criarPersonagem.php")
 
 }
 

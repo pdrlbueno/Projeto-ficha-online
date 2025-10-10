@@ -602,7 +602,7 @@ include 'adicionarDados.php';
             </div>
 
 
-
+                <button type="subimit">enviar</button>
         </form>
 
     </main>

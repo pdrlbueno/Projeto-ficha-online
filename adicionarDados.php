@@ -20,20 +20,20 @@
         $conjuracao   = $_POST['conjuração'];   
         $CDmagias     = $_POST['CDmagias'];     
         $MODmagia     = $_POST['MODmagia'];     
-        $Sforca         = $_POST['Sforça'];        
-        $Sdestreza      = $_POST['Sdestreza'];     
-        $Sconstituicao  = $_POST['Sconstituição'];  
-        $Sinteligencia  = $_POST['SInteligência'];  
-        $Ssabedoria     = $_POST['SSabedoria'];    
-        $Scarismo       = $_POST['SCarisma'];     
+        $forca         = $_POST['Sforça'];        
+        $destreza      = $_POST['Sdestreza'];     
+        $constituicao  = $_POST['Sconstituição'];  
+        $inteligencia  = $_POST['SInteligência'];  
+        $sabedoria     = $_POST['SSabedoria'];    
+        $carisma       = $_POST['SCarisma'];     
         $armas1 = $_POST['armas1'];  
         $armas2 = $_POST['armas2'];  
         $armas3 = $_POST['armas3'];  
         $armadura = $_POST['armaduras']; 
-        $escudo   = $_POST['escudo'];     
-        $pericia = implode(",", $_POST['pericia']);
-        $classe = implode(",", $_POST['classe']);
-        $salvaguarda = implode(",", $_POST['salvaguarda ']); 
+        $escudo = 3;   
+        $pericia = 2;
+        $classe = 2;
+        $salvaguarda = 5;
         $magia1 = $_POST['magia1'];
         $magia2 = $_POST['magia2'];
         $magia3 = $_POST['magia3'];
@@ -107,7 +107,7 @@
         $magia71 = $_POST['magia71'];
         $magia72 = $_POST['magia72'];
         $magia73 = $_POST['magia73'];
-        $magia74 = $_POST['magia74'];
+        $magia74 = 5;
         $magia75 = $_POST['magia75'];
         $magia76 = $_POST['magia76'];
         $magia77 = $_POST['magia77'];
@@ -117,12 +117,17 @@
 
          $sql = " INSERT INTO equipamento (escudo,arma_primaria,arma_terciaria,arma_secundaria,aradura) VALUE ('$escudo','$armas1','$armas3','$armas2','$armadura')";
 
-         $sql = " INSERT INTO statusPer (escudo,arma_primaria,arma_terciaria,arma_secundaria,aradura) VALUE ('$escudo','$armas1','$armas3','$armas2','$armadura')";
+         $sql = " INSERT INTO statusPer (forca, destreza, constituica, inteligencia, sabedoria, carisma, pericia, salvaguarda) VALUE ('$forca', '$destreza', '$constituicao', '$inteligencia', '$sabedoria', '$carisma', '$pericia', '$salvaguarda')";
 
-         $sql = " INSERT INTO equipamento (escudo,arma_primaria,arma_terciaria,arma_secundaria,aradura) VALUE ('$escudo','$armas1','$armas3','$armas2','$armadura')";
-
+         $sql = " INSERT INTO persona (nome_jogador, nome_personagem ) VALUE ('$Jname','$Pname')";
 
         
-  
+        if ($conn->query($sql) === true) {
+            echo "Novo registro criado com sucesso.";
+        } else {
+            echo "Erro " . $sql . '<br>' . $conn->error;
+        }
+        $conn->close();
+
     }
 ?>

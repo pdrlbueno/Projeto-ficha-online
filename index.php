@@ -18,9 +18,33 @@
     <main >
         <div class="criarPersonagem">
 
-            <p>Novo personagem</p>
+            <p>Novo personagem</p><br>
             <button onclick="CriarFicha()" class="buttonAdi"><h1 >+</h1></button>
         </div>
+
+        <?php
+
+            include 'db.php';
+
+            $sql = "SELECT * FROM persona";
+
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+            echo"
+            <div class='criarPersonagem'>
+            <p>{$row['nome_jogador']} </p><br>
+            <button onclick='CriarFicha()' class='buttonAdi'><h1 >+</h1></button>
+            </div>";
+              
+            }
+            }
+
+            $conn -> close();
+
+           
+        ?>
     </main>
 </body>
 

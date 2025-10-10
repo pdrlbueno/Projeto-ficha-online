@@ -3,7 +3,7 @@ USE database_ficha;
 
 CREATE TABLE equipamento (
     id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    escudo BOOLEAN,
+    escudo varchar(3),
     arma_primaria VARCHAR(45),
     arma_terciaria VARCHAR(45),
     arma_secundaria VARCHAR(45),
@@ -149,7 +149,6 @@ CREATE TABLE nono_circulo (
     nono_linha_8 VARCHAR(45)
 );
 
--- Agora sim, criar a tabela persona com todas as referências válidas
 CREATE TABLE persona (
     id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nome_jogador VARCHAR(45),

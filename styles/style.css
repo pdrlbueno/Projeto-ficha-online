@@ -168,33 +168,34 @@ main {
     border-color: black;
     border-style: groove;
     padding: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
     margin: 2px;
-    width: 100%;
+    
     width: 25%;
     font-weight: bold;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+
 }
 
 .criarPersonagem p {
     text-align: center;
-    font-size: 140%;
+    font-size: 130%;
     margin: 1%;
 }
+
 .buttonAdi {
     font-size: 180%;
     background-color: brown;
-    margin: 3px;
+    
     width: 70%;
     height: 20%;
     padding: 1px;
 }
+
 .buttonAdi h1 {
-    
+
     margin: 0px;
-   
+
 }
 
 /*pagina criar personagem*/
@@ -223,6 +224,7 @@ main {
 
 
 }
+
 .containerMagias {
     background-color: brown;
     border-color: black;
@@ -235,6 +237,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .caixa input {
     background-color: white;
     border-color: black;
@@ -289,7 +292,7 @@ main {
     background-size: cover;
 }
 
-.ContainerClasseDesc{
+.ContainerClasseDesc {
     background-color: brown;
     border-color: black;
     border-style: groove;
@@ -302,7 +305,7 @@ main {
     justify-content: center;
 }
 
-#classeDesc{
+#classeDesc {
     background-color: brown;
     margin: 5px;
     width: 100px;
@@ -311,7 +314,7 @@ main {
     border-radius: 10px;
 }
 
-.ContainerClasse{
+.ContainerClasse {
     height: 100%;
     width: 100%;
     border: 0;

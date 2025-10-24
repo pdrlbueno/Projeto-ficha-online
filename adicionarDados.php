@@ -115,10 +115,7 @@
         $magia79 = $_POST['magia79'];
         $magia80 = $_POST['magia80'];
 
-         $sql = " INSERT INTO equipamento (escudo,arma_primaria,arma_terciaria,arma_secundaria,aradura) VALUE ('$escudo','$armas1','$armas3','$armas2','$armadura')";
-
-         $sql = " INSERT INTO statusPer (forca, destreza, constituica, inteligencia, sabedoria, carisma, pericia, salvaguarda) VALUE ('$forca', '$destreza', '$constituicao', '$inteligencia', '$sabedoria', '$carisma', '$pericia', '$salvaguarda')";
-
+        
          $sql = " INSERT INTO persona (nome_jogador, nome_personagem ) VALUE ('$Jname','$Pname')";
 
         

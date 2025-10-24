@@ -168,12 +168,16 @@ main {
     border-color: black;
     border-style: groove;
     padding: 5px;
-    padding-left: 10%;
-    padding-right: 10%;
+    text-align: center;
     margin: 2px;
-    
     width: 25%;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
 
 }
 
@@ -186,18 +190,16 @@ main {
 .buttonAdi {
     font-size: 180%;
     background-color: brown;
-    
     width: 70%;
     height: 20%;
     padding: 1px;
 }
 
-.buttonAdi h1 {
-
-    margin: 0px;
-
+.buttonAdi a {
+    color: black;
+    font-style: normal;
+    text-decoration: none;
 }
-
 /*pagina criar personagem*/
 .criarFicha {
 

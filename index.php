@@ -19,7 +19,9 @@
         <div class="criarPersonagem">
 
             <p>Novo personagem</p><br>
-            <button onclick="CriarFicha()" class="buttonAdi"><h1 >+</h1></button>
+            <div class="buttonAdi">
+                <a href="criarPersonagem.php" target="_blank" >+</a>
+            </div>
         </div>
 
         <?php
@@ -34,9 +36,13 @@
             while ($row = $result->fetch_assoc()) {
             echo"
             <div class='criarPersonagem'>
-            <p>{$row['nome_jogador']} </p><br>
-            <button onclick='CriarFicha()' class='buttonAdi'><h1 >+</h1></button>
+
+            <p>{$row['nome_personagem']} </p><br>
+            <div class='buttonAdi'>
+                <a href='criarPersonagem.php' target='_blank' >+</a>
+            </div>
             </div>";
+            
               
             }
             }

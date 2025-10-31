@@ -40,7 +40,6 @@ CREATE TABLE truques (
     linha_8 VARCHAR(45)
 );
 
--- Repetir a mesma lógica para os círculos
 CREATE TABLE pri_circulo (
     id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     pri_linha_1 VARCHAR(45),

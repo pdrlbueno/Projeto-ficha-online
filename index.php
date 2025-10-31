@@ -1,3 +1,4 @@
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -39,7 +40,7 @@
 
             <p>{$row['nome_personagem']} </p><br>
             <div class='buttonAdi'>
-                <a href='criarPersonagem.php' target='_blank' >+</a>
+            <a href='verPersonagem.php?id={$row['id']}'>Editar<a>
             </div>
             </div>";
             
@@ -48,9 +49,10 @@
             }
 
             $conn -> close();
-
+            
            
         ?>
+       
     </main>
 </body>
 

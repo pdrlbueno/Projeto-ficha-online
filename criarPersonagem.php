@@ -62,12 +62,14 @@ include 'adicionarDados.php';
                             <label for="Pvida">Pontos de vida</label><br>
                             <input type="number" id="Pvida" name="Pvida" class="status"><br>
                             <label for="Dvida">Dado de vida</label><br>
-                            <input type="number" id="Dvida" name="Dvida" class="status">
+                            <input type="text" id="Dvida" name="Dvida" class="status">
+                            <label for="QDvida">Quantidade Dado de vida</label><br>
+                            <input type="text" id="QDvida" name="QDvida" class="status">
                         </div>
 
                         <div class="separar">
                             <p>Raça:</p>
-                            <select name="raça" id="raça">
+                            <select name="raca" id="raca">
                                 <option value="nulo">....</option>
                                 <option value="Anão">Anão</option>
                                 <option value="Elfo">Elfo</option>
@@ -80,8 +82,8 @@ include 'adicionarDados.php';
                                 <option value="tielfling">Tielfling</option>
                             </select>
                             <br>
-                            <label for="Antecedente">Antecedente:</label><br>
-                            <input type="text" id="Antecedente" name="Antecedente">
+                            <label for="antecedente">Antecedente:</label><br>
+                            <input type="text" id="antecedente" name="antecedente">
 
                             <p> Alinhamento:</p>
                             <select name="alinhamento" id="alinhamento">
@@ -100,8 +102,8 @@ include 'adicionarDados.php';
 
                         <div class="separar">
 
-                            <label for="conjuração">Atributo de conjuração</label><br>
-                            <input type="text" id="conjuração" name="conjuração" class="status"><br>
+                            <label for="conjuracao">Atributo de conjuração</label><br>
+                            <input type="text" id="conjuracao" name="conjuracao" class="status"><br>
 
 
                             <label for="CDmagias">Cd para magias</label><br>

@@ -21,7 +21,7 @@
 
             <p>Novo personagem</p><br>
             <div class="buttonAdi">
-                <a href="criarPersonagem.php" target="_blank" >+</a>
+                <a href="criarPersonagem.php"  >+</a>
             </div>
         </div>
 
@@ -40,7 +40,7 @@
 
             <p>{$row['nome_personagem']} </p><br>
             <div class='buttonAdi'>
-            <a href='verPersonagem.php?id={$row['id']}'>Editar<a>
+            <a href='verPersonagem.php?id={$row['id']}' >Editar<a>
             </div>
             </div>";
             

@@ -1,5 +1,5 @@
 <?php
-include 'adicionarDados.php';
+include 'adicionarDados/persona.php';
 ?>
 <html lang="pt-br">
 <head>

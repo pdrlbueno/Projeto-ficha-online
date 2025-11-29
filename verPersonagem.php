@@ -3,7 +3,8 @@
 include 'db.php';
 
 $id = $_GET['id'];
-$sql = "SELECT * FROM persona where id=$id";
+$sql = "SELECT * from persona where id = '$id'";
+
 
 $result = $conn->query($sql);
 
@@ -422,72 +423,179 @@ $row = $result->fetch_assoc();
 
                 <div>
 
+
+
                     <div class="containerMagias">
                         <div class="boxMagias">
                             <div class="NomeMagia">
                                 <p>TRUQUES</p>
                             </div>
                             <div>
+                                <input type="text" class="inputMagia" name="magia0"><br>
                                 <input type="text" class="inputMagia" name="magia1"><br>
                                 <input type="text" class="inputMagia" name="magia2"><br>
                                 <input type="text" class="inputMagia" name="magia3"><br>
                                 <input type="text" class="inputMagia" name="magia4"><br>
                                 <input type="text" class="inputMagia" name="magia5"><br>
                                 <input type="text" class="inputMagia" name="magia6"><br>
-                                <input type="text" class="inputMagia" name="magia7"><br>
-                                <input type="text" class="inputMagia" name="magia8">
+                                <input type="text" class="inputMagia" name="magia7">
                             </div>
                         </div>
-                        <?php
-                        $circulo = 1;
-                        $numMagia = 9;
-                        for ($i = 1; $i < 10; $i++) {
 
-                            echo "
-                                <div class='boxMagias'>
-                                    <div class='NomeMagia'>
-                                        <p>Círculo $circulo</p>
-                                    </div>
-                                    <div>
-                                    ";
-                            echo "<input type='text' class='inputMagia' name='magia$numMagia'><br>";
-                            $numMagia++;
-                            echo "<input type='text' class='inputMagia' name='magia$numMagia'><br>";
-                            $numMagia++;
-                            echo "<input type='text' class='inputMagia' name='magia$numMagia'><br>";
-                            $numMagia++;
-                            echo "<input type='text' class='inputMagia' name='magia$numMagia'><br>";
-                            $numMagia++;
-                            echo "<input type='text' class='inputMagia' name='magia$numMagia'><br>";
-                            $numMagia++;
-                            echo "<input type='text' class='inputMagia' name='magia$numMagia'><br>";
-                            $numMagia++;
-                            echo "<input type='text' class='inputMagia' name='magia$numMagia'><br>";
-                            $numMagia++;
-                            echo " <input type='text' class='inputMagia' name='magia$numMagia'>
-                                    </div>
-                                </div>";
+                        <div class="boxMagias">
+                            <div class="NomeMagia">
+                                <p>Círculo 1</p>
+                            </div>
+                            <div>
+                                <input type="text" class="inputMagia" name="magia8"><br>
+                                <input type="text" class="inputMagia" name="magia9"><br>
+                                <input type="text" class="inputMagia" name="magia10"><br>
+                                <input type="text" class="inputMagia" name="magia11"><br>
+                                <input type="text" class="inputMagia" name="magia12"><br>
+                                <input type="text" class="inputMagia" name="magia13"><br>
+                                <input type="text" class="inputMagia" name="magia14"><br>
+                                <input type="text" class="inputMagia" name="magia15">
+                            </div>
+                        </div>
 
-                            $circulo++;
-                            $numMagia++;
-                        }
-                        ?>
-                        <!-- Bloco 2 -->
 
-                        <!-- Bloco 3 -->
+                        <div class="boxMagias">
+                            <div class="NomeMagia">
+                                <p>Círculo 2</p>
+                            </div>
+                            <div>
+                                <input type="text" class="inputMagia" name="magia16"><br>
+                                <input type="text" class="inputMagia" name="magia17"><br>
+                                <input type="text" class="inputMagia" name="magia18"><br>
+                                <input type="text" class="inputMagia" name="magia19"><br>
+                                <input type="text" class="inputMagia" name="magia20"><br>
+                                <input type="text" class="inputMagia" name="magia21"><br>
+                                <input type="text" class="inputMagia" name="magia22"><br>
+                                <input type="text" class="inputMagia" name="magia23">
+                            </div>
+                        </div>
 
+                        <div class="boxMagias">
+                            <div class="NomeMagia">
+                                <p>Círculo 3</p>
+                            </div>
+                            <div>
+                                <input type="text" class="inputMagia" name="magia24"><br>
+                                <input type="text" class="inputMagia" name="magia25"><br>
+                                <input type="text" class="inputMagia" name="magia26"><br>
+                                <input type="text" class="inputMagia" name="magia27"><br>
+                                <input type="text" class="inputMagia" name="magia28"><br>
+                                <input type="text" class="inputMagia" name="magia29"><br>
+                                <input type="text" class="inputMagia" name="magia30"><br>
+                                <input type="text" class="inputMagia" name="magia31">
+                            </div>
+                        </div>
+
+
+                        <div class="boxMagias">
+                            <div class="NomeMagia">
+                                <p>Círculo 4</p>
+                            </div>
+                            <div>
+                                <input type="text" class="inputMagia" name="magia32"><br>
+                                <input type="text" class="inputMagia" name="magia33"><br>
+                                <input type="text" class="inputMagia" name="magia34"><br>
+                                <input type="text" class="inputMagia" name="magia35"><br>
+                                <input type="text" class="inputMagia" name="magia36"><br>
+                                <input type="text" class="inputMagia" name="magia37"><br>
+                                <input type="text" class="inputMagia" name="magia38"><br>
+                                <input type="text" class="inputMagia" name="magia39">
+                            </div>
+                        </div>
+
+                        <div class="boxMagias">
+                            <div class="NomeMagia">
+                                <p>Círculo 5</p>
+                            </div>
+                            <div>
+                                <input type="text" class="inputMagia" name="magia40"><br>
+                                <input type="text" class="inputMagia" name="magia41"><br>
+                                <input type="text" class="inputMagia" name="magia42"><br>
+                                <input type="text" class="inputMagia" name="magia43"><br>
+                                <input type="text" class="inputMagia" name="magia44"><br>
+                                <input type="text" class="inputMagia" name="magia45"><br>
+                                <input type="text" class="inputMagia" name="magia46"><br>
+                                <input type="text" class="inputMagia" name="magia47">
+                            </div>
+                        </div>
+
+                        <div class="boxMagias">
+                            <div class="NomeMagia">
+                                <p>Círculo 6</p>
+                            </div>
+                            <div>
+                                <input type="text" class="inputMagia" name="magia48"><br>
+                                <input type="text" class="inputMagia" name="magia49"><br>
+                                <input type="text" class="inputMagia" name="magia50"><br>
+                                <input type="text" class="inputMagia" name="magia51"><br>
+                                <input type="text" class="inputMagia" name="magia52"><br>
+                                <input type="text" class="inputMagia" name="magia53"><br>
+                                <input type="text" class="inputMagia" name="magia54"><br>
+                                <input type="text" class="inputMagia" name="magia55">
+                            </div>
+
+                        </div>
+                        <div class="boxMagias">
+                            <div class="NomeMagia">
+                                <p>Círculo 7</p>
+                            </div>
+                            <div>
+                                <input type="text" class="inputMagia" name="magia56"><br>
+                                <input type="text" class="inputMagia" name="magia57"><br>
+                                <input type="text" class="inputMagia" name="magia58"><br>
+                                <input type="text" class="inputMagia" name="magia59"><br>
+                                <input type="text" class="inputMagia" name="magia60"><br>
+                                <input type="text" class="inputMagia" name="magia61"><br>
+                                <input type="text" class="inputMagia" name="magia62"><br>
+                                <input type="text" class="inputMagia" name="magia63">
+                            </div>
+                        </div>
+
+                        <div class="boxMagias">
+                            <div class="NomeMagia">
+                                <p>Círculo 8</p>
+                            </div>
+                            <div>
+                                <input type="text" class="inputMagia" name="magia64"><br>
+                                <input type="text" class="inputMagia" name="magia65"><br>
+                                <input type="text" class="inputMagia" name="magia66"><br>
+                                <input type="text" class="inputMagia" name="magia67"><br>
+                                <input type="text" class="inputMagia" name="magia68"><br>
+                                <input type="text" class="inputMagia" name="magia69"><br>
+                                <input type="text" class="inputMagia" name="magia70"><br>
+                                <input type="text" class="inputMagia" name="magia71">
+                            </div>
+                        </div>
+
+                        <div class="boxMagias">
+                            <div class="NomeMagia">
+                                <p>Círculo 9</p>
+                            </div>
+                            <div>
+                                <input type="text" class="inputMagia" name="magia72"><br>
+                                <input type="text" class="inputMagia" name="magia73"><br>
+                                <input type="text" class="inputMagia" name="magia74"><br>
+                                <input type="text" class="inputMagia" name="magia75"><br>
+                                <input type="text" class="inputMagia" name="magia76"><br>
+                                <input type="text" class="inputMagia" name="magia77"><br>
+                                <input type="text" class="inputMagia" name="magia78"><br>
+                                <input type="text" class="inputMagia" name="magia79">
+                            </div>
+                        </div>
 
 
                     </div>
 
 
                 </div>
-
-
             </div>
-
-
             <button type="subimit">enviar</button>
+
         </form>
 
     </main>
